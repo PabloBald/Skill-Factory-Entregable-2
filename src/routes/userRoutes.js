@@ -10,6 +10,6 @@ router.post("/login",validateUser, userControllers.login);
 router.get("/:id",checkLoggedIn,checkAdminPrivileges,userControllers.getById);
 router.put("/:id",checkLoggedIn,checkAdminPrivileges, userControllers.edit);
 router.delete("/:id",checkLoggedIn,checkAdminPrivileges, userControllers.destroy);
-router.get("/:id",checkLoggedIn,checkAdminPrivileges, userControllers.getById);
+
 
 module.exports = router;
