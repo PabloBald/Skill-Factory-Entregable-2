@@ -34,3 +34,22 @@
   <li>USUARIO - PUT - <b>/api/cars/buy/:id</b> : Adquirir un auto por id, para el usuario logeado.</li>
   <li>ADMIN - DELETE - <b>/api/cars/:id</b> : Eliminar un auto.</li>
 </ul>
+<br />
+<br />
+<h3> Credenciales de administrador </h3>
+<b>
+ email: admin@concesionaria.com
+ password: admin
+</b>
+<br />
+<br />
+<h3>Instrucciones para correr </h3>
+<ol>
+  <li>Clonar</li>
+  <li>Ejecutar: "npm install"</li>
+  <li>Crear archivo .env completando las variables de entorno con las propias.</li>
+  <li>Ejecutar "npm build". Esto va a correr las migraciones y el seed correspondiente al usuario admin.</li>
+  <li>Ejecutar "npm start".</li>
+</ol>
+
+
