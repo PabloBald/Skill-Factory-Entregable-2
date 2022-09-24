@@ -47,8 +47,8 @@
 <ol>
   <li>Clonar</li>
   <li>Ejecutar: "npm install"</li>
-  <li>Crear archivo .env completando las variables de entorno con las propias.</li>
-  <li>Ejecutar "npm build". Esto va a correr las migraciones y el seed correspondiente al usuario admin.</li>
+  <li>Crear archivo .env completando las variables de entorno con las propias, basandose en el .env-example</li>
+  <li>Ejecutar "npm run build". Esto va a correr las migraciones y el seed correspondiente al usuario admin.</li>
   <li>Ejecutar "npm start".</li>
 </ol>
 
