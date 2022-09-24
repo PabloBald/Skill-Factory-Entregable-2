@@ -39,7 +39,7 @@
 <h3> Credenciales de administrador </h3>
 <b>
  email: admin@concesionaria.com
- password: admin
+ password: el password que se asigno en el .env
 </b>
 <br />
 <br />
