@@ -2,7 +2,8 @@ const db = require("../models/index");
 const { Car, User } = db;
 
 async function getAll(req, res, next) {
-	Car.findAll({ where: { UserId: null }, attributes: { exclude: ["UserId"] } })
+	const { limit,offset } = req.query;
+	Car.findAll({ limit,offset,where: { UserId: null }, attributes: { exclude: ["UserId"] } })
 		.then((cars) => res.status(200).send(cars))
 		.catch((error) => {
 			error.status = 500;

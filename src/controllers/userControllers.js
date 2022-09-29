@@ -4,8 +4,8 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 async function getAll(req, res, next) {
-	
-	User.findAll({ include: [{ model: db.Car, as: "Cars" }] })
+	const { limit,offset } = req.query;
+	User.findAll({ limit,offset,include: [{ model: db.Car, as: "Cars" }] })
 		.then((users) => res.status(200).send(users))
 		.catch((err) => {
 			err.status = 500;
